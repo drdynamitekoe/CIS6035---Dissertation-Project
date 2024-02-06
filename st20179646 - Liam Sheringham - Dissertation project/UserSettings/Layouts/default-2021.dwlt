@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 108
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 110
+  controlID: 18
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 111
+  controlID: 19
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 256
     height: 561.2
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 240.40002
     height: 820
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -334,9 +334,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 214.20001}
-    m_SelectedIDs: 948d0000
-    m_LastClickedID: 36244
-    m_ExpandedIDs: 000000001e8d0000208d0000228d0000248d0000268d00002c8d00002e8d0000968d000000ca9a3bffffff7f
+    m_SelectedIDs: 86930100
+    m_LastClickedID: 103302
+    m_ExpandedIDs: 0000000036930100389301003a9301003c9301003e93010040930100429301004493010000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e8d0000208d0000228d0000248d0000268d0000288d00002a8d00002c8d00002e8d0000
+    m_ExpandedIDs: 0000000036930100389301003a9301003c9301003e930100409301004293010044930100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,23 +451,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5a135500
-      m_LastClickedID: 5575514
-      m_ExpandedIDs: b4e5c9ffe0f9c9ffc425caffe2d4cbff42e8cbff8efbcbffa4accdffea01ceff8c17ceff7434ceff6238ceffb240ceffc840ceffca40ceffd840ceff7a47ceff9463cefff069ceffe4b8ceff64e3ceff68e3ceff22f3ceff2608cfffce23cfff0cd4d0ff12d5d0ff9a86d2ff369dd2ff80b0d2ffcac3d2ff14d7d2ff60ead2ff6099d4ff48a8d4ffb2c4d4ffd638d5ffe21fd7ff2e33d7ff90e2d8ff9a4bdcffd64bdcff124cdcff625fdcff240ddeffe4badfffa468e1ff4c20e3ff48cfe4fffc81e6ff6296e6ffea4be8ffa656f1ff7e06f3ff7eb5f4ff18c9f4ff3878f6ffe427f8ff643bf8ff6aeaf9ff4efef9ffdc35faff40e4fbff760dfcff5028fcff382bfcff3e2cfcff302efcff342efcff9e5afcffae5afcffbe5afcffd05afcff785cfcffc25ffcffc45ffcffc85ffcff3cf4ffff76f8fffff263000098650000ce6500003c660000be670000a4680000b06900004c6a0000766a0000746b0000ce6b00008c6d0000606e0000d06e0000e66f000052700000ec7100002a720000cc760000a67700001a7b00003a7b00006e7b000068c0050038c50500a6e30500620606001c4e060074bf0d000ccd0d00d0dc0d007c880f00eca60f00c2c90f0032c21200cacf12008edf1200a069140010881400e6aa140008831600588f160076ce200014db20000ae0200056182100a41821004c222100f2a521003cb721000e8a2e000a932e009ea02e00f60c38007a9c3d00626c3e00b246420022474200a2534200b8594200dc594200f661420000634200b667420050914400f6924400849544008c964400849c4400ce9c44006ca0440042a4440080a54400e8a6440040a84400c0a84400baaa4400d0af44006c94460098bc4600a6064700e60a470048464700f28b4700ea904700ae924700169d4700a8d847004eda47001af2470022284900c8294900562c49007a2c49005e2d49005e33490046344900fa344900c23d4900cc3e49001a3f4900944149003e434900b04449005c464900aa4649006e8949004e8a4900668e4900ca944900b2954900909a4900909c4900069f49004ca0490010a34900a8a4490044a7490024944a003cac4a0072f54a00f0124b0096134b00ec144b005e164b0046494b00824e4b0060504b0006534b00a6544b00a6564b00dc574b0082584b00bc5c4b00907b4b0092dc4b006a104d0066b44f00d6b25400640d5500
+      m_SelectedIDs: 96950500129805009a8f0500ac7a0500b68f0500228a05007a800500908c05002e8605005c8b0500727c05009a8005003c80050048920500
+      m_LastClickedID: 365128
+      m_ExpandedIDs: 00d3faff20edfaff209cfcff1c4bfeff38fbffff742f050022300500
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: The Dragon Master (1)
+        m_OriginalName: The Dragon Master (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -338202
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -554,7 +554,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 26}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -686,7 +686,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -702,9 +702,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 557.01465, y: 255.77414, z: -1.4431225}
+    m_Target: {x: -23078.09, y: 45829.883, z: -13725.876}
     speed: 2
-    m_Value: {x: 557.01465, y: 255.77414, z: -1.4431225}
+    m_Value: {x: -23344.191, y: 45801.07, z: 3202.4014}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -751,13 +751,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
   m_Size:
-    m_Target: 313.74976
+    m_Target: 12364.193
     speed: 2
-    m_Value: 313.74976
+    m_Value: 11831.764
   m_Ortho:
     m_Target: 0
     speed: 2
