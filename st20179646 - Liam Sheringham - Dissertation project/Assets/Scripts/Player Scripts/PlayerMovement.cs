@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     float speed = 9000.0f;
     public bool IsGrounded;
-
-    private float resetCounter;
 
     // Start is called before the first frame update
     void Start()

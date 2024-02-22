@@ -42,8 +42,12 @@ public class player : MonoBehaviour
 
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collision detected" + collision.gameObject.name);
+    }
 
-    void takeDamage(int damage) //Function for taking damage
+        void takeDamage(int damage) //Function for taking damage
     {
         currentHealth -= damage; //The health is decreased by the amount of damage taken
         healthBar.SetHealth(currentHealth); //The healthbar also decreases
