@@ -17,12 +17,11 @@ public class Enemy : MonoBehaviour
         enemyHealthBar.SetMaxEnemyHealth(maxEnemyHealth); //Health bar fill is also set to maximum
     }
 
-    void Update()
+        private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown(KeyCode.L)) //The space button is pressed
+        if (other.gameObject.CompareTag("Ice")) 
         {
-            takeDamage(10); //Health is lost (testing purposes)
-
+            takeDamage(20); //Health is lost (testing purposes)
         }
 
         if (currentEnemyHealth <= 0) //Health reaches zero

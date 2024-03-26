@@ -1309,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 65412204d963e0a44a170be46e6605a9, type: 2}
     - target: {fileID: 919132149155446097, guid: 9a4d9bf260cec804d9ce809ee10c4ea8, type: 3}
       propertyPath: m_Name
-      value: 'Tai Fu '
+      value: Tai Fu  Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9a4d9bf260cec804d9ce809ee10c4ea8, type: 3}
       propertyPath: m_IsActive
@@ -2280,7 +2280,7 @@ MeshCollider:
   m_GameObject: {fileID: 8405667210520752521}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -2312,7 +2312,7 @@ BoxCollider:
   m_GameObject: {fileID: 8405667210520752521}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.6, z: 0.1}
   m_Center: {x: 0, y: -0.1, z: 0.09}
@@ -2415,7 +2415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 200000
   _turnSpeed: 30
-  IsGrounded: 0
 --- !u!114 &1138867842
 MonoBehaviour:
   m_ObjectHideFlags: 0

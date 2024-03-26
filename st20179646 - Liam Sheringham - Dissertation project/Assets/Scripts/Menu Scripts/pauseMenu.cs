@@ -7,7 +7,8 @@ public class pauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false; //The pause conditions
     public GameObject pauseMenuUI; //The pause menu
-    public GameObject helpMenuUI; //The help menu
+    public GameObject hudMenuUI; //The heads up display menu
+    public GameObject controlsMenuUI; //The controls menu
     public GameObject settingsMenuUI; //The settings menu
     public GameObject hudUI; //The HUD screen
 
@@ -32,8 +33,9 @@ public class pauseMenu : MonoBehaviour
     public void Resume() //The resume game button function
     {
         pauseMenuUI.SetActive(false); //The pause menu is disabled
-       helpMenuUI.SetActive(false); //The help menu is disabled
+       hudMenuUI.SetActive(false); //The hud menu is disabled
         settingsMenuUI.SetActive(false); //The settings menu is disabled
+        controlsMenuUI.SetActive(false); //The controls menu is disabled
         hudUI.SetActive(true); //The HUD is displayed once more
         Time.timeScale = 1f; //The scene resumes
         GameIsPaused = false; //The game is currently unpaused

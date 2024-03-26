@@ -6,7 +6,7 @@ using TMPro;
 
 public class halfHealthRefill : MonoBehaviour
 {
-    public int maxHealth = 100; //The players maximum health
+    public int maxHealth = 50; //The players maximum health
     public int currentHealth; //The players current health
     public healthBar healthBar; //The health bar itself
 
@@ -19,11 +19,14 @@ public class halfHealthRefill : MonoBehaviour
 
     void OnTriggerEnter(Collider collision) //A collision is detected 
     {
+        currentHealth = maxHealth / 2; //The players health at the start 
+        healthBar.SetMaxHealth(maxHealth / 2);
+        healthBar.SetHealth(maxHealth / 2); //The bar is set to maximum health  
+
+
         GameObject otherObject = collision.gameObject;
         Destroy(gameObject); //the resource is destroyed when collided with
 
-        currentHealth = currentHealth + 50; //The health is reset to maximum
-        healthBar.SetMaxHealth(currentHealth); //The bar is reset to reflect the players health
     }
 
 }

@@ -7,16 +7,26 @@ public class playerControls : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 2f; //The speed the player is moving in
     [SerializeField] private float _turnSpeed = 10f;
-
+    public float jumpForce = 500;
+    private Rigidbody playerRb;
+    public bool isOnGround = true;
     CharacterController _characterController;
     void Awake() => _characterController = GetComponent<CharacterController>();
+
+    void Start()
+    {
+        playerRb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
     {
         float horizontal = Input.GetAxis("Mouse X");
         transform.Rotate(horizontal * _turnSpeed * Vector3.up, Space.World);
-     
+
+        float vertical = Input.GetAxis("Mouse Y");
+        transform.Rotate(vertical * _turnSpeed * Vector3.up, Space.World);
+
         if (Input.GetKey(KeyCode.Q))
             transform.Rotate(Time.deltaTime * _turnSpeed * Vector3.down); //turns player left
 
@@ -35,8 +45,14 @@ public class playerControls : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
             transform.position += Time.deltaTime * _moveSpeed * -transform.forward; //moves player back
 
-        if (Input.GetKey(KeyCode.X))
-            transform.position = new Vector3(0, 1f, 0);
+        if (Input.GetKey(KeyCode.C))
+        {
+            transform.position += Time.deltaTime * _moveSpeed * -transform.up; //moves player Up
+        }
+
+        if (Input.GetKey(KeyCode.Z))
+            transform.position += Time.deltaTime * _moveSpeed * transform.up; //moves player Down
 
     }
 }
+

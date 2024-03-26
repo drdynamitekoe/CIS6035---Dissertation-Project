@@ -5,7 +5,7 @@ using UnityEngine;
 public class chiRefill : MonoBehaviour
 {
     public int maxChi = 100; //The starting chi value
-    public int currentChi; //The current chi value
+    private int currentChi; //The current chi value
     public energyBar chiBar; //The chi bar
 
     void Start()
@@ -14,13 +14,13 @@ public class chiRefill : MonoBehaviour
         chiBar.SetMaxEnergy(maxChi);
     }
 
-    void OnTriggerEnter(Collider collision) //Collision with a energy resource
+    void OnTriggerEnter(Collider collision) //A collision is detected 
     {
-        GameObject otherObject = collision.gameObject; //The collision is detected 
-        Destroy(gameObject); //The resource is destroyed when collided with
+        currentChi = maxChi; //The players health at the start 
+        chiBar.SetMaxEnergy(maxChi);
+        chiBar.SetEnergy(maxChi); //The bar is set to maximum health  
 
-        currentChi = maxChi; //The chi is reset to maximum
-        chiBar.SetMaxEnergy(maxChi); //The bar is reset to maximum
-    
+        GameObject otherObject = collision.gameObject;
+        Destroy(gameObject); //the resource is destroyed when collided with
     }
 }
