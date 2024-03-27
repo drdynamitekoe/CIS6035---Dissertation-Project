@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class playerControls : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 2f; //The speed the player is moving in
-    [SerializeField] private float _turnSpeed = 10f;
+    [SerializeField] private float _turnSpeed = 10f; //The speed the player turns in
     public float jumpForce = 500;
     private Rigidbody playerRb;
-    public bool isOnGround = true;
-    CharacterController _characterController;
+    public bool isOnGround;
+   CharacterController _characterController;
     void Awake() => _characterController = GetComponent<CharacterController>();
 
     void Start()
@@ -20,7 +20,7 @@ public class playerControls : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         float horizontal = Input.GetAxis("Mouse X");
         transform.Rotate(horizontal * _turnSpeed * Vector3.up, Space.World);
 
@@ -46,9 +46,7 @@ public class playerControls : MonoBehaviour
             transform.position += Time.deltaTime * _moveSpeed * -transform.forward; //moves player back
 
         if (Input.GetKey(KeyCode.C))
-        {
             transform.position += Time.deltaTime * _moveSpeed * -transform.up; //moves player Up
-        }
 
         if (Input.GetKey(KeyCode.Z))
             transform.position += Time.deltaTime * _moveSpeed * transform.up; //moves player Down
