@@ -18,6 +18,11 @@ public class enemyAfter : MonoBehaviour
     [SerializeField] float sightRange, attackRange;
     bool playerInSight, playerInAttackRange;
 
+    [SerializeField]
+    float _moveSpeed = 15.0f;
+
+
+
     // Use this for initialization
     void Start()
     {
